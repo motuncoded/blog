@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .container{
+      width: min(1200px, 100% - (1rem * 2));
+      margin-inline: auto;
+
+  }
+}
