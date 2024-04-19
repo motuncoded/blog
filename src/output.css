@@ -729,6 +729,7 @@ video {
   transition-duration: 150ms;
 }
 
+
 @media (min-width: 768px) {
   .md\:sticky {
     position: sticky;

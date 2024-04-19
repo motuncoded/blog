@@ -5,7 +5,6 @@ function Hero() {
     <div className="mt-10">
         <HeroDescription/>
         <HeroSection/>
-      
     </div>
   )
 }

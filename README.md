@@ -1,8 +1,30 @@
-# React + Vite
+# blog.  🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![image](./blog.png)
 
-Currently, two official plugins are available:
+ ## Core idea 💡
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a website that has numerous collection of various articles.
+
+
+ ## Features  📚
+
+- ⚡ [React.js](https://react.dev/blog/2023/03/16/introducing-react-dev) with App Router support
+- 💎 Integrate with [Tailwind CSS](https://tailwindcss.com) styling
+- 📏 Linter with [Prettier](https://prettier.io/).
+
+ ## Tech Stack 💻
+
+![ReactJs](https://img.shields.io/badge/React%20js-000000?style=for-the-badge&logo=react&logoColor=white)
+
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-000000?style=for-the-badge&logo=tailwindcss&logoColor=white)
+
+
+
+ ## How to use
+
+ * Clone the repository
+ * Run npm install
+ * Run npm run dev
+
+

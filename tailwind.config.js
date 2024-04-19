@@ -8,9 +8,15 @@ export default {
       orange: "#ff6f4f",
       green: "#029c54",
       ghostWhite: "#dac6fb",
+      gray: "#8c8c8c",
     },
 
-    extend: {},
+    extend: {
+      scrollbar: {
+        width: "thin", // or 'none' or 'auto'
+        color: "#8c8c8c", // any valid CSS color value
+      },
+    },
   },
   plugins: [],
 };
