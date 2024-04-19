@@ -5,7 +5,6 @@ import BlogCard from "../components/BlogCard";
 function Technology() {
 
   const [articles, setArticles] = useState([]);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     let url = `https://newsapi.org/v2/everything?q=technology&apiKey=${import.meta.env.VITE_API_KEY}`;
