@@ -7,7 +7,7 @@ function Technology() {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    let url = `https://newsapi.org/v2/everything?q=technology&apiKey=${import.meta.env.VITE_API_KEY}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=9bb1ce4f63d74db08d7433bd4bfd17a5`;
     fetch(url)
       .then(response => response.json())
       .then(data => 
