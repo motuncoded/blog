@@ -7,11 +7,11 @@ function Technology() {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=9bb1ce4f63d74db08d7433bd4bfd17a5`;
+    let url = `https://dev.to/api/articles`;
     fetch(url)
       .then(response => response.json())
       .then(data => 
-      setArticles(data.articles))
+      setArticles(data))
   
   
   }, [])
@@ -27,7 +27,7 @@ return (
                     key={index}
                     title={news.title}
                     description={news.description}
-                    src={news.urlToImage}
+                    src={news.cover_image}
                     url={news.url}
                   />
                 );
