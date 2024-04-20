@@ -25,6 +25,7 @@ function Business() {
                 key={index}
                 title={news.title}
                 description={news.description}
+                
                 url={news.url}
               />
             );

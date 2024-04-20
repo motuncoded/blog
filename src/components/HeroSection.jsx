@@ -13,7 +13,7 @@ import {Link } from "react-router-dom"
      topics: "12",
      color: "bg-ghostWhite",
      icon: <IoIosArrowForward />,
-     link:"general",
+     link:"/general",
    },
    {
      id: 2,
@@ -22,7 +22,7 @@ import {Link } from "react-router-dom"
      topics: "15",
      color: "bg-green",
      icon: <IoIosArrowForward />,
-     link:"fashion"
+     link:"/fashion"
    },
    {
      id: 3,
@@ -40,7 +40,7 @@ import {Link } from "react-router-dom"
      topics: "40",
      color: "bg-white",
      icon: <IoIosArrowForward />,
-     link: "technology",
+     link: "/technology",
    },
  ];
 function HeroSection() {
