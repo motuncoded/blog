@@ -19,13 +19,13 @@ function Business() {
     <div className="bg-bgColor">
       <BlogLayout title="Business">
         <div className="container grid grid-cols-3 place-items-center gap-4 bg-bgColor max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-2">
-          {articles.map((news, index) => {
+          {articles && articles.map && articles.map((news, index) => {
             return (
               <BlogCard
                 key={index}
                 title={news.title}
                 description={news.description}
-                
+
                 url={news.url}
               />
             );
