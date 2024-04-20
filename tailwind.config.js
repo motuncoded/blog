@@ -9,6 +9,7 @@ export default {
       green: "#029c54",
       ghostWhite: "#dac6fb",
       gray: "#8c8c8c",
+      black:"#191f22"
     },
 
     extend: {

@@ -8,25 +8,26 @@
       margin-inline: auto;
 
   }
+ 
   /* WebKit-based browsers */
 ::-webkit-scrollbar {
   width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background:#0a0a0a ;
+   @apply bg-bgColor
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #dac6fb;
+  @apply bg-ghostWhite
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #8c8c8c;
+  @apply bg-gray
 
 }
 ::-webkit-scrollbar-corner{
-  background:#fff ;
+  @apply bg-white
 
 }  
 

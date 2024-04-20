@@ -1,3 +1,4 @@
+import MenuBar from "./MenuBar";
 import Navbar from "./Navbar";
 import PropTypes from "prop-types";
 
@@ -16,7 +17,7 @@ function BlogLayout({children, title}) {
       <div className="container bg-bgColor">
         <Navbar />
         <h1 className="text-3xl text-ghostWhite text-center mb-8">{title}</h1>
-      
+      <MenuBar/>
         {children}
       </div>
     </div>

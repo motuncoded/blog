@@ -31,6 +31,7 @@ import {Link } from "react-router-dom"
      topics: "10",
      color: "bg-orange",
      icon: <IoIosArrowForward />,
+     link:"/education"
      
    },
    {
