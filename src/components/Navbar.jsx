@@ -8,11 +8,11 @@ import SearchInput from "../components/SearchInput";
 function Navbar() {
    const searchInput = <SearchInput />;
    const menuRightIcon = (
-     <CgMenuRight size="24" color="white" key="menu-right-icon" title="Menu" className="mr-3"/>
+     <CgMenuRight size="24" color="white" key="menu-right-icon" title="Menu" "/>
    );
   return (
     <div
-      className=" container flex justify-between h-[80px] items-center w-max sticky top-0 left-0 bg-bgColor   "
+      className="container flex justify-between h-[80px] items-center w-[100%] sticky top-0 left-0 bg-bgColor   "
       role="navigation"
       aria-label="Main navigation"
     >
