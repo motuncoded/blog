@@ -15,8 +15,8 @@ function HeroDescription() {
   return (
     <div className="flex justify-between items-center px-4 max-sm:grid grid-cols-1 max-lg:grid ">
       <div className="text-white w-[700px] max-sm:w-auto max-md:w-auto ">
-        <h2 className="text-5xl leading-tight font-bold	 max-sm:text-4xl">
-          blog. -this is a numerous collection of various articles
+        <h2 className="text-5xl leading-tight font-bold	 max-sm:text-3xl">
+          blog. -this is a numerous collection of various articles.
         </h2>
         <Link
           to="/general"

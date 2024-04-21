@@ -12,12 +12,12 @@ function Navbar() {
    );
   return (
     <div
-      className="flex justify-between items-center   sticky top-0 bg-bgColor container py-4 max-sm:justify-around max-sm:py-3   "
+      className=" container flex justify-between h-[80px] items-center w-max sticky top-0 left-0 bg-bgColor   "
       role="navigation"
       aria-label="Main navigation"
     >
-      <h1 className="text-white text-[24px]">blog.</h1>
-      <div className="flex items-center max-sm:justify-center  ">
+      <h1 className="text-white text-[26px]">blog.</h1>
+      <div className="flex justify-center items-center   ">
         {searchInput}
         {menuRightIcon}
       </div>

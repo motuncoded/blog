@@ -29,7 +29,8 @@ function Business() {
   return (
     <div className="bg-bgColor">
       <BlogLayout title="Business">
-        <div className="container grid grid-cols-3 place-items-center gap-4 bg-bgColor max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-2">
+        <div className="container grid grid-cols-3 place-items-center gap-4
+         bg-bgColor max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-2">
           {business.map((news) => {
             return (
               <>

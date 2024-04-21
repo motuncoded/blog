@@ -9,9 +9,14 @@
 
 /* Define a new utility layer for custom styles */
 @layer utilities {
+
+  body{
+        @apply bg-bgColor;
+
+  }
   /* Define a container class with a minimum width of 1180px and automatic horizontal margins */
   .container {
-    width: min(1180px, 100% - (1rem * 2));
+    width: min(1280px, 100% - (1rem * 2));
     margin-inline: auto;
   }
 

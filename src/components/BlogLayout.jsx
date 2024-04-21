@@ -22,7 +22,7 @@ BlogLayout.propTypes = {
 function BlogLayout({ children, title }) {
   return (
     <div
-      className=" bg-bgColor min-h-screen grid bg-red w-[100%] 
+      className=" bg-bgColor min-h-screen grid bg-red container w-max 
     scrollbar scrollbar-thin scrollbar-track-red 
     scrollbar-bgColor"
       aria-label="Blog layout"
