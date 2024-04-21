@@ -1,18 +1,24 @@
- import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+// Import BlogLayout component
 import BlogLayout from "../components/BlogLayout";
+// Import BlogCard component
 import BlogCard from "../components/BlogCard";
+// Import general.json file
 import general from "../components/json/general.json";
+// Import Skeleton component
 import Skeleton from "../components/Skeleton";
 
-
 function General() {
-   const [loading, setLoading] = useState(false);
+  // Define state variable loading and its setter function setLoading
+  const [loading, setLoading] = useState(false);
 
-   useEffect(() => {
-     setTimeout(() => {
-       setLoading(true);
-     }, 1000);
-   }, []);
+  // Use useEffect hook to set loading to true after 1 second
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(true);
+    }, 1000);
+  }, []);
+  // Return JSX);
 
   return (
     <div className="bg-bgColor">

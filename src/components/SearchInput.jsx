@@ -1,42 +1,47 @@
+// Import useState hook from react
 import { useState } from "react";
+
+// Import CiSearch icon from react-icons/ci
 import { CiSearch } from "react-icons/ci";
 
-
+// Define SearchInput component
 function SearchInput() {
+  // Define state variable search and its setter function setSearch
+  const [search, setSearch] = useState("");
 
-  const [search, setSearch] =  useState("")
-   const menuItems = [
-     {
-       id: 1,
-       title: "General",
-       link: "/general",
-     },
-     {
-       id: 2,
-       title: "Fashion",
-       link: "/fashion",
-     },
-     {
-       id: 3,
-       title: "Education",
-       link: "/education",
-     },
-     {
-       id: 4,
-       title: "Technology",
-       link: "/technology",
-     },
-       {
-       id: 5,
-       title: "Business",
-       link: "/business",
-     }
-   ];
+  // Define menuItems array
+  const menuItems = [
+    {
+      id: 1,
+      title: "General",
+      link: "/general",
+    },
+    {
+      id: 2,
+      title: "Fashion",
+      link: "/fashion",
+    },
+    {
+      id: 3,
+      title: "Education",
+      link: "/education",
+    },
+    {
+      id: 4,
+      title: "Technology",
+      link: "/technology",
+    },
+    {
+      id: 5,
+      title: "Business",
+      link: "/business",
+    },
+  ];
 
+  // Define handleChange function to update the search state variable
   const handleChange = (e) => {
-  setSearch(e.target.value)
-}
-  
+    setSearch(e.target.value);
+  };
 
   return (
     <div className="flex flex-col justify-center items-center ">
@@ -48,7 +53,7 @@ function SearchInput() {
           placeholder="Search"
           onChange={handleChange}
         />
-        
+
         <CiSearch size="16" color="gray" />
       </div>
       <div
@@ -59,11 +64,11 @@ function SearchInput() {
         {menuItems
           .filter((item) => {
             const searchItem = search.toLowerCase();
-            const title = item.title.toLowerCase()
-            return searchItem && title.startsWith(searchItem)
+            const title = item.title.toLowerCase();
+            return searchItem && title.startsWith(searchItem);
           })
           .map((item) => (
-            <a key={item.id}  href={item.link} className="text-white p-2">
+            <a key={item.id} href={item.link} className="text-white p-2">
               {item.title}
             </a>
           ))}

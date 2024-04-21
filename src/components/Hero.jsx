@@ -1,12 +1,17 @@
- import HeroDescription from "./HeroDescription"
-import HeroSection from "./HeroSection"
+// Import HeroDescription component
+import HeroDescription from "./HeroDescription";
+
+// Import HeroSection component
+import HeroSection from "./HeroSection";
+
+// Define Hero component
 function Hero() {
   return (
     <div className="mt-10">
-        <HeroDescription/>
-        <HeroSection/>
+      <HeroDescription />
+      <HeroSection />
     </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

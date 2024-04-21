@@ -1,9 +1,16 @@
-
+// Import BiLogoPlayStore icon from react-icons/bi
 import { BiLogoPlayStore } from "react-icons/bi";
+
+// Import IoLogoApple icon from react-icons/io5
 import { IoLogoApple } from "react-icons/io5";
+
+// Import IoIosArrowForward icon from react-icons/io
 import { IoIosArrowForward } from "react-icons/io";
+
+// Import Link component from react-router-dom
 import { Link } from "react-router-dom";
 
+// Define HeroDescription component
 function HeroDescription() {
   return (
     <div className="flex justify-between items-center px-4 max-sm:grid grid-cols-1 max-lg:grid ">
@@ -11,7 +18,8 @@ function HeroDescription() {
         <h2 className="text-5xl leading-tight font-bold	 max-sm:text-4xl">
           blog. -this is a numerous collection of various articles
         </h2>
-        <Link to="/general"
+        <Link
+          to="/general"
           className="mt-8 text-2xl w-max pb-[2px] border-white border-b-2 font-light flex items-center max-sm:mt-4	max-md:mt-4"
         >
           Go to articles
@@ -45,4 +53,5 @@ function HeroDescription() {
   );
 }
 
-export default HeroDescription
+// Export HeroDescription component
+export default HeroDescription;

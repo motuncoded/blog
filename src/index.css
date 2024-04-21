@@ -1,36 +1,53 @@
+/* Import Tailwind CSS base styles */
 @tailwind base;
+
+/* Import Tailwind CSS component classes */
 @tailwind components;
+
+/* Import Tailwind CSS utility classes */
 @tailwind utilities;
 
+/* Define a new utility layer for custom styles */
 @layer utilities {
-  .container{
-      width: min(1180px, 100% - (1rem * 2));
-      margin-inline: auto;
-
+  /* Define a container class with a minimum width of 1180px and automatic horizontal margins */
+  .container {
+    width: min(1180px, 100% - (1rem * 2));
+    margin-inline: auto;
   }
- 
-  /* WebKit-based browsers */
-::-webkit-scrollbar {
-  width: 15px;
-}
 
-::-webkit-scrollbar-track {
-   @apply bg-bgColor
-}
+  /* Define custom styles for WebKit-based browsers' scrollbars */
+  /* Set the width of the scrollbar to 15px */
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
 
-::-webkit-scrollbar-thumb {
-  @apply bg-ghostWhite
-}
-::-webkit-scrollbar-button{
-  @apply bg-bgColor
+  /* Define the track of the scrollbar */
+  ::-webkit-scrollbar-track {
+    /* Apply the background color from the Tailwind CSS config */
+    @apply bg-bgColor;
+  }
 
-}
-::-webkit-scrollbar-corner{
-  @apply bg-white
+  /* Define the thumb of the scrollbar */
+  ::-webkit-scrollbar-thumb {
+    /* Apply the background color from the Tailwind CSS config */
+    @apply bg-ghostWhite;
+  }
 
-}  
-::-webkit-scrollbar-track-piece{
-  @apply bg-black
-}
+  /* Define the buttons of the scrollbar */
+  ::-webkit-scrollbar-button {
+    /* Apply the background color from the Tailwind CSS config */
+    @apply bg-bgColor;
+  }
 
+  /* Define the corner of the scrollbar */
+  ::-webkit-scrollbar-corner {
+    /* Apply the background color from the Tailwind CSS config */
+    @apply bg-white;
+  }
+
+  /* Define the track piece of the scrollbar */
+  ::-webkit-scrollbar-track-piece {
+    /* Apply the background color from the Tailwind CSS config */
+    @apply bg-black;
+  }
 }

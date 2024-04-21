@@ -1,4 +1,3 @@
-
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -7,9 +6,8 @@ import Technology from "./routes/Technology.jsx";
 import ErrorPage from "./routes/ErrorPage.jsx";
 import Business from "./routes/Business.jsx";
 import General from "./routes/General.jsx";
-import Fashion from "./routes/Fashion.jsx"
-import Education from "./routes/Education.jsx"
-
+import Fashion from "./routes/Fashion.jsx";
+import Education from "./routes/Education.jsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -34,7 +32,7 @@ function App() {
       path: "/fashion",
       element: <Fashion />,
     },
-     {
+    {
       path: "/education",
       element: <Education />,
     },

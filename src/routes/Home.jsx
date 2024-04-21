@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 
- function Home() {
+function Home() {
   return (
     <div
       className=" bg-bgColor min-h-screen w-[100%] 

@@ -1,4 +1,3 @@
-
 const Skeleton = () => {
   return (
     <div className="border p-4 rounded bg shadow-2xl w-[100%] gap-4 max-w-[345px] bg-black">
