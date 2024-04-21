@@ -2,6 +2,7 @@
 import { BiLogoPlayStore } from "react-icons/bi";
 import { IoLogoApple } from "react-icons/io5";
 import { IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 function HeroDescription() {
   return (
@@ -10,13 +11,12 @@ function HeroDescription() {
         <h2 className="text-5xl leading-tight font-bold	 max-sm:text-4xl">
           blog. -this is a numerous collection of various articles
         </h2>
-        <button
-          type="submit"
-          className="mt-8 text-2xl pb-[2px] border-white border-b-2 font-light flex items-center max-sm:mt-4	max-md:mt-4"
+        <Link to="/general"
+          className="mt-8 text-2xl w-max pb-[2px] border-white border-b-2 font-light flex items-center max-sm:mt-4	max-md:mt-4"
         >
           Go to articles
           <IoIosArrowForward />
-        </button>
+        </Link>
       </div>
       <div className="text-white w-[400px] max-sm:mt-8 max-sm:w-[350px] max-md:mt-8 max-lg:mt-8 ">
         <h3 className="">

@@ -25,14 +25,16 @@ function Technology() {
   }, [])
   
   return (
-    <div className = "bg-bgColor" >
-    <BlogLayout title="Technology">
-          <div className="container grid grid-cols-3 place-items-center gap-4 bg-bgColor max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-2">
+    <div className="bg-bgColor ">
+      <BlogLayout title="Technology">
+        <div className="container grid grid-cols-3 place-items-center gap-4 bg-bgColor
+         max-sm:grid-cols-1 max-sm:place-items-center max-md:grid-cols-2 max-lg:grid-cols-2">
           {articles.map((news, index) => {
             return (
               <>
-                {!loading ? <Skeleton /> :
-
+                {!loading ? (
+                  <Skeleton />
+                ) : (
                   <BlogCard
                     key={index}
                     title={news.title}
@@ -41,18 +43,14 @@ function Technology() {
                     url={news.url}
                     tags={news.tag_list}
                   />
-                }
+                )}
               </>
-            )
-          }
-        )
-            
-            
-          }
-          </div>
-    </BlogLayout>
-      </div>
-    )
+            );
+          })}
+        </div>
+      </BlogLayout>
+    </div>
+  );
 }
 
 export default Technology;

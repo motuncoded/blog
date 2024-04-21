@@ -11,7 +11,7 @@
  
   /* WebKit-based browsers */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 15px;
 }
 
 ::-webkit-scrollbar-track {
@@ -21,14 +21,16 @@
 ::-webkit-scrollbar-thumb {
   @apply bg-ghostWhite
 }
-
-::-webkit-scrollbar-thumb:hover {
-  @apply bg-gray
+::-webkit-scrollbar-button{
+  @apply bg-bgColor
 
 }
 ::-webkit-scrollbar-corner{
   @apply bg-white
 
 }  
+::-webkit-scrollbar-track-piece{
+  @apply bg-black
+}
 
 }

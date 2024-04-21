@@ -16,7 +16,7 @@ function BlogLayout({children, title}) {
     >
       <div className="container bg-bgColor">
         <Navbar />
-        <h1 className="text-3xl text-ghostWhite text-center mb-8">{title}</h1>
+        <h1 className="text-3xl text-ghostWhite text-center mt-4 mb-4">{title}</h1>
       <MenuBar/>
         {children}
       </div>

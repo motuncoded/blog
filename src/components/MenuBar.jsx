@@ -3,33 +3,39 @@ function MenuBar() {
     const menuItems = [
       {
         id: 1,
-        title: "General",
-        link: "/general",
-        color: "bg-orange",
+        title: "Home",
+        link: "/",
       },
       {
         id: 2,
-        title: "Fashion",
-        link: "/fashion",
-        color: "bg-orange",
+        title: "General",
+        link: "/general",
       },
       {
         id: 3,
-        title: "Education",
-        link: "/education",
-        color: "bg-orange",
+        title: "Fashion",
+        link: "/fashion",
       },
       {
         id: 4,
+        title: "Education",
+        link: "/education",
+      },
+      {
+        id: 5,
         title: "Technology",
         link: "/technology",
-        color: "bg-orange",
+      },
+       {
+        id: 6,
+        title: "Business",
+        link: "/business",
       },
     ];
 
 
   return (
-    <div className=" flex justify-center items-center m-4">
+    <div className=" flex justify-center items-center m-4 max-sm:grid grid-cols-5">
       {menuItems.map((item) => (
         <NavLink
           key={item.id}
@@ -38,10 +44,13 @@ function MenuBar() {
             return {
                 color: isActive ? "white" : "white",
                 backgroundColor: isActive ? "#ff6f4f" : 'inherit',
-                padding: isActive ? "10px" : "10px",
+                padding: isActive ? "8px" : "8px",
                 borderRadius: isActive && "5px",
-                margin: isActive ? "1rem" : "1rem",
-                transition :isActive ? "all ease-in .6s" : "all ease-in-out .4s"
+                margin: isActive ? "8px" : "8px",
+                transition: isActive ? "all ease-in .6s" : "all ease-in-out .4s",
+                width: isActive && "max-content",
+                
+                
             };
           }}
           className={({ isActive, isPending }) => {

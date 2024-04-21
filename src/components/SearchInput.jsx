@@ -52,9 +52,9 @@ function SearchInput() {
         <CiSearch size="16" color="gray" />
       </div>
       <div
-        className="flex flex-col p-2 border-[1px] 
+        className="flex flex-col   border-[1px] 
       rounded mt-4 absolute top-12
-       w-[200px] bg-bgColor border-gray z-40 empty:border-none "
+       w-[210px] bg-bgColor border-gray z-40 empty:border-none "
       >
         {menuItems
           .filter((item) => {
@@ -63,7 +63,7 @@ function SearchInput() {
             return searchItem && title.startsWith(searchItem)
           })
           .map((item) => (
-            <a key={item.id}  href={item.link} className="text-white">
+            <a key={item.id}  href={item.link} className="text-white p-2">
               {item.title}
             </a>
           ))}
