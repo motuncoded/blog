@@ -22,7 +22,6 @@ const sections = [
     id: 1,
     logo: <CgController size="24" />,
     title: "general",
-    topics: "12",
     color: "bg-ghostWhite",
     icon: <IoIosArrowForward />,
     link: "/general",
@@ -31,7 +30,6 @@ const sections = [
     id: 2,
     logo: <FaShoppingBag size="24" />,
     title: "Fashion",
-    topics: "15",
     color: "bg-green",
     icon: <IoIosArrowForward />,
     link: "/fashion",
@@ -40,7 +38,6 @@ const sections = [
     id: 3,
     logo: <IoIosSchool size="24" />,
     title: "education",
-    topics: "10",
     color: "bg-orange",
     icon: <IoIosArrowForward />,
     link: "/education",
@@ -49,7 +46,6 @@ const sections = [
     id: 4,
     logo: <GrTechnology size="24" />,
     title: "technology",
-    topics: "40",
     color: "bg-white",
     icon: <IoIosArrowForward />,
     link: "/technology",
@@ -69,10 +65,9 @@ function HeroSection() {
               className={`${item.color} p-2 h-[250px] rounded-tl-2xl rounded-br-2xl max-sm:w-auto`}
             >
               <h5 className="text-black">{item.logo}</h5>
-              <div className=" mt-40 flex justify-between  items-center">
+              <div className=" mt-44 flex justify-between  items-center">
                 <div>
                   <h6 className="text-black capitalize">{item.title}</h6>
-                  <p className="font-light">{item.topics} topics</p>
                 </div>
                 <Link
                   to={item.link}
