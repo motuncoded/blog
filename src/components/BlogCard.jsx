@@ -18,7 +18,7 @@ BlogCard.propTypes = {
 function BlogCard({ title, description, src, url }) {
   return (
     <div
-      className="bg-black p-2 max-w-[350px] w-max rounded max-sm:w-[300px] "
+      className="bg-black p-2 max-w-[345px]  rounded  max-sm:max-w-[300px] max-sm:max-w-[280px  max-lg:w-[325px]"
       role="region"
     >
       <img

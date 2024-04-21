@@ -39,7 +39,7 @@ function MenuBar() {
 
   // Return JSX
   return (
-    <div className=" flex justify-center items-center mb-4  max-sm:grid grid-cols-3 place-items-center">
+    <div className=" flex justify-center items-center mb-4 w-[100%]   max-sm:grid grid-cols-3 place-items-center">
       {menuItems.map((item) => (
         <NavLink
           key={item.id}
@@ -47,7 +47,7 @@ function MenuBar() {
           className={({ isActive }) =>
             isActive
               ? " bg-[#ff6f4f] text-white text-xl p-1 rounded-md  transition-all ease-in duration-600 max-sm:w-max max-sm:text-[14px]" 
-              : "text-white text-xl  rounded-md  transition-all ease-in-out duration-400 max-sm:text-[14px]"
+              : "text-white text-xl  rounded-md  m-4 transition-all ease-in-out duration-400 max-sm:text-[14px] max-sm:m-0"
           }
           aria-current={({ isActive }) => (isActive ? "page" : undefined)}
         >

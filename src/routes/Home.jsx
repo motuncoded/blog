@@ -4,11 +4,11 @@ import Hero from "../components/Hero";
 function Home() {
   return (
     <div
-      className=" bg-bgColor min-h-screen w-[100%] 
+      className=" bg-bgColor min-h-screen container 
     scrollbar scrollbar-thin scrollbar-track-red 
     scrollbar-bgColor"
     >
-      <div className="container">
+      <div className="">
         <Navbar />
         <Hero />
       </div>
