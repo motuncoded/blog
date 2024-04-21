@@ -25,13 +25,17 @@ function BlogLayout({ children, title }) {
       className=" bg-bgColor min-h-screen grid bg-red w-[100%] 
     scrollbar scrollbar-thin scrollbar-track-red 
     scrollbar-bgColor"
+      aria-label="Blog layout"
     >
       <div className="container bg-bgColor">
-        <Navbar />
-        <h1 className="text-3xl text-ghostWhite text-center mt-4 mb-4">
+        <Navbar aria-label="Navigation bar" />
+        <h1
+          className="text-3xl text-ghostWhite text-center mt-4 mb-4"
+          aria-label={`Blog title: ${title}`}
+        >
           {title}
         </h1>
-        <MenuBar />
+        <MenuBar aria-label="Menu bar" />
         {children}
       </div>
     </div>

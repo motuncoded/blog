@@ -1,7 +1,12 @@
 const Skeleton = () => {
   return (
     <div className="border p-4 rounded bg shadow-2xl w-[100%] gap-4 max-w-[345px] bg-black">
-      <div className="relative h-60 mb-4 flex justify-center items-center bg-black animate-pulse">
+      <div
+        className="relative h-60 mb-4 flex justify-center items-center bg-black animate-pulse"
+        role="graphics-document"
+        aria-label="Skeleton loading animation"
+        tabIndex="0"
+      >
         <svg
           className="w-10 h-10 text-gray-200 dark:text-gray-600"
           aria-hidden="true"

@@ -30,14 +30,14 @@ function Business() {
     <div className="bg-bgColor">
       <BlogLayout title="Business">
         <div className="container grid grid-cols-3 place-items-center gap-4 bg-bgColor max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-2">
-          {business.map((news, index) => {
+          {business.map((news) => {
             return (
               <>
                 {!loading ? (
                   <Skeleton />
                 ) : (
                   <BlogCard
-                    key={index}
+                    key={news.id}
                     title={news.title}
                     description={news.description}
                     src={news.urlToImage}

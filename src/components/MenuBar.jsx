@@ -39,25 +39,17 @@ function MenuBar() {
 
   // Return JSX
   return (
-    <div className=" flex justify-center items-center m-4 max-sm:grid grid-cols-5">
+    <div className=" flex justify-center items-center m-4 max-sm:grid grid-cols-3">
       {menuItems.map((item) => (
         <NavLink
           key={item.id}
           to={item.link}
-          style={({ isActive }) => {
-            return {
-              color: isActive ? "white" : "white",
-              backgroundColor: isActive ? "#ff6f4f" : "inherit",
-              padding: isActive ? "8px" : "8px",
-              borderRadius: isActive && "5px",
-              margin: isActive ? "8px" : "8px",
-              transition: isActive ? "all ease-in.6s" : "all ease-in-out.4s",
-              width: isActive && "max-content",
-            };
-          }}
-          className={({ isActive, isPending }) => {
-            return isActive ? "active" : isPending ? "pending" : "";
-          }}
+          className={({ isActive }) =>
+            isActive
+              ? "active bg-[#ff6f4f] text-white py-2 px-4 rounded-md m-2 transition-all ease-in duration-600"
+              : "text-white py-2 px-4 rounded-md m-2 transition-all ease-in-out duration-400"
+          }
+          aria-current={({ isActive }) => isActive ? "page" : undefined} 
         >
           {item.title}
         </NavLink>

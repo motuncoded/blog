@@ -57,21 +57,27 @@ function HeroSection() {
   return (
     <div className="mt-10">
       <h4 className="text-2xl text-white text-center">Popular Sections</h4>
-      <div className="mt-6 grid grid-cols-4 gap-4 max-sm:grid  max-sm:grid-cols-1 max-md:grid max-md:grid-cols-2 max-lg:grid  max-lg:grid-cols-2">
+      <div className="mt-6 mx-0 grid grid-cols-4 place-content-center p-4 gap-4 max-sm:grid  max-sm:grid-cols-1 max-sm:m-0 max-md:grid max-md:grid-cols-2 max-lg:grid  max-lg:grid-cols-2">
         {sections.map((item) => {
           return (
             <div
               key={item.id}
-              className={`${item.color} p-2 h-[250px] rounded-tl-2xl rounded-br-2xl max-sm:w-auto`}
+              className={`${item.color} p-2 h-[250px] rounded-tl-2xl rounded-br-2xl max-sm:h-[150px]  `}
             >
-              <h5 className="text-black">{item.logo}</h5>
-              <div className=" mt-44 flex justify-between  items-center">
+              <h5 className="text-black" aria-label={`Section ${item.title}`}>
+                {item.logo}
+              </h5>
+              <div className=" mt-44 flex justify-between items-center max-sm:mt-20">
                 <div>
                   <h6 className="text-black capitalize">{item.title}</h6>
                 </div>
                 <Link
                   to={item.link}
-                  className="border p-2 flex justify-end items-center "
+                  className="border p-1 flex justify-end items-center "
+                  aria-label={`Go to ${item.title} section`}
+                  aria-current={
+                    item.link === window.location.pathname ? "page" : null
+                  }
                 >
                   {item.icon}
                 </Link>

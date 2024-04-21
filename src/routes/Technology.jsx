@@ -30,7 +30,7 @@ function Technology() {
     <div className="bg-bgColor ">
       <BlogLayout title="Technology">
         <div
-          className="container grid grid-cols-3 place-items-center gap-4 bg-bgColor
+          className=" grid grid-cols-3 place-items-center gap-4 bg-bgColor
          max-sm:grid-cols-1 max-sm:place-items-center max-md:grid-cols-2 max-lg:grid-cols-2"
         >
           {articles.map((news, index) => {

@@ -45,13 +45,18 @@ function SearchInput() {
 
   return (
     <div className="flex flex-col justify-center items-center ">
-      <div className="border-[1px] rounded p-1 bg-bgColor border-gray flex justify-start items-center mx-10 ">
+      <div
+        className="border-[1px] rounded p-1 bg-bgColor
+       border-gray flex justify-start items-center mx-10
+        "
+      >
         <input
           type="text"
           value={search}
           className="bg-bgColor border-hodder outline-none  text-white text-[16px] placeholder-gray"
           placeholder="Search"
           onChange={handleChange}
+          aria-label="Search"
         />
 
         <CiSearch size="16" color="gray" />
@@ -68,7 +73,13 @@ function SearchInput() {
             return searchItem && title.startsWith(searchItem);
           })
           .map((item) => (
-            <a key={item.id} href={item.link} className="text-white p-2">
+            <a
+              key={item.id}
+              href={item.link}
+              className="text-white p-2"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               {item.title}
             </a>
           ))}
