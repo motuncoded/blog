@@ -3,6 +3,7 @@ import { useState } from "react";
 
 // Import CiSearch icon from react-icons/ci
 import { CiSearch } from "react-icons/ci";
+import { NavLink } from "react-router-dom";
 
 // Define SearchInput component
 function SearchInput() {
@@ -73,15 +74,15 @@ function SearchInput() {
             return searchItem && title.startsWith(searchItem);
           })
           .map((item) => (
-            <a
+            <NavLink
               key={item.id}
-              href={item.link}
+              to={item.link}
               className="text-white p-2"
               rel="noopener noreferrer"
               target="_blank"
             >
               {item.title}
-            </a>
+            </NavLink>
           ))}
       </div>
     </div>
