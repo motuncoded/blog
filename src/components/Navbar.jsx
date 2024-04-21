@@ -17,7 +17,7 @@ function Navbar() {
       aria-label="Main navigation"
     >
       <h1 className="text-white text-[26px]">blog.</h1>
-      <div className="flex justify-center items-center   ">
+      <div className="flex justify-center items-center max-sm:ml-4   ">
         {searchInput}
         {menuRightIcon}
       </div>

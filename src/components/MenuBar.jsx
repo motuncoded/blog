@@ -46,8 +46,8 @@ function MenuBar() {
           to={item.link}
           className={({ isActive }) =>
             isActive
-              ? "active bg-[#ff6f4f] text-white text-xl py-2 px-2 rounded-md m-2 transition-all ease-in duration-600 max-sm:w-max"
-              : "text-white text-xl py-2 px-4 rounded-md m-2 transition-all ease-in-out duration-400  max-sm:mb-2 max-sm:mt-0 "
+              ? " bg-[#ff6f4f] text-white text-xl p-1 rounded-md  transition-all ease-in duration-600 max-sm:w-max max-sm:text-[14px]" 
+              : "text-white text-xl  rounded-md  transition-all ease-in-out duration-400 max-sm:text-[14px]"
           }
           aria-current={({ isActive }) => (isActive ? "page" : undefined)}
         >

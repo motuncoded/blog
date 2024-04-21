@@ -64,7 +64,7 @@ function HeroSection() {
             <div
               key={item.id}
               className={`${item.color} flex flex-col 
-              p-4 h-[250px] rounded-tl-2xl rounded-br-2xl max-sm:h-[165px] `}
+              p-4 h-[250px] rounded-tl-2xl rounded-br-2xl max-sm:h-[165px] max-sm:w-auto `}
             >
               {" "}
                 <h5

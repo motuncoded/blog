@@ -45,16 +45,15 @@ function SearchInput() {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center max-sm:inline-block">
+    <div className="flex flex-col justify-center items-center max-sm:hidden ">
       <div
-        className="border-[1px] rounded p-1 bg-bgColor
-       border-gray flex justify-start items-center mx-10 max-sm:mx-4 max-md:mx-6
-        "
-      >
+        className="border-[1px] rounded p-[0.3rem] bg-bgColor
+       border-gray flex justify-start items-center mx-10">
+       
         <input
           type="text"
           value={search}
-          className="bg-bgColor  outline-none  text-white text-[16px] placeholder-gray"
+          className="bg-bgColor  outline-none  text-white text-[16px] placeholder-gray "
           placeholder="Search"
           onChange={handleChange}
           aria-label="Search"
@@ -65,8 +64,8 @@ function SearchInput() {
       <div
         className="flex flex-col  border-[1px] 
       rounded mt-4 absolute top-12
-       w-[210px] bg-bgColor border-gray z-40 empty:border-none "
-      >
+       w-[210px] bg-bgColor border-gray z-40 empty:border-none ">
+      
         {menuItems
           .filter((item) => {
             const searchItem = search.toLowerCase();
@@ -77,7 +76,7 @@ function SearchInput() {
             <NavLink
               key={item.id}
               to={item.link}
-              className="text-white p-2"
+              className="text-white p-2 max-sm:p-1"
               rel="noopener noreferrer"
               target="_blank"
             >

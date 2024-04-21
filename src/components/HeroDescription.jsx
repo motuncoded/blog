@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 function HeroDescription() {
   return (
     <div className="flex justify-between items-center px-4 max-sm:grid grid-cols-1 max-lg:grid ">
-      <div className="text-white w-[700px] max-sm:w-auto max-md:w-auto ">
+      <div className="text-white w-[700px] max-sm:w-[300px] ">
         <h2 className="text-5xl leading-tight font-bold	 max-sm:text-3xl">
           blog. -this is a numerous collection of various articles.
         </h2>
@@ -26,7 +26,7 @@ function HeroDescription() {
           <IoIosArrowForward />
         </Link>
       </div>
-      <div className="text-white w-[400px] max-sm:mt-8 max-sm:w-[350px] max-md:mt-8 max-lg:mt-8 ">
+      <div className="text-white w-[400px] max-sm:mt-8 max-sm:w-[280px] max-md:mt-8 max-lg:mt-8 ">
         <h3 className="">
           Electronic scientific library of open access. The catalog is regularly
           overgrowth with texts of articles from varous scientific publications.
