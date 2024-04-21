@@ -12,7 +12,7 @@ function Navbar() {
    );
   return (
     <div
-      className=" flex justify-between h-[80px] items-center w-[100%] sticky top-0 left-0 bg-bgColor   "
+      className="flex justify-between h-[80px] items-center w-[100%] sticky top-0 left-0 bg-bgColor   "
       role="navigation"
       aria-label="Main navigation"
     >
