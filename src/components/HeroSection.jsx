@@ -64,7 +64,7 @@ function HeroSection() {
             <div
               key={item.id}
               className={`${item.color} flex flex-col 
-              p-4 h-[350px] rounded-tl-2xl rounded-br-2xl max-sm:h-[165px] max-sm:w-[310px] `}
+              p-4 h-[250px] rounded-tl-2xl rounded-br-2xl max-sm:h-[165px] max-sm:w-[310px] `}
             >
               {" "}
                 <h5
@@ -73,7 +73,7 @@ function HeroSection() {
                 >
                   {item.logo}
                 </h5>
-              <div className=" mt-[17rem] flex justify-between max-sm:mt-20">
+              <div className=" mt-[10.5rem] flex justify-between max-sm:mt-20">
                 <div>
                   <h6 className="text-black capitalize">{item.title}</h6>
                 </div>
